@@ -40,9 +40,23 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+/**
+ * Al cargar o recargar, la página siempre empieza arriba de todo: se desactiva
+ * la restauración de scroll del navegador y se quita el `#seccion` de la URL
+ * antes de que el navegador salte a esa sección.
+ */
+const scrollToTopOnLoad = `
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  window.scrollTo(0, 0);
+`;
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es-AR" data-scroll-behavior="smooth" className={`${fontDisplay.variable} ${fontSans.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: scrollToTopOnLoad }} />
+      </head>
       <body>
         <MotionProvider>{children}</MotionProvider>
       </body>
