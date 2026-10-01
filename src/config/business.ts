@@ -43,8 +43,6 @@ export interface BusinessConfig {
   };
   hours: {
     schedule: OpeningHours[];
-    note: string;
-    isPlaceholder: boolean;
   };
   hero: {
     eyebrow: string;
@@ -79,11 +77,10 @@ export const business: BusinessConfig = {
     ],
   },
   whatsapp: {
-    // DEMO: reemplazar por el número real de la óptica (formato 549 + característica + número).
-    number: "5493471000000",
-    displayNumber: "+54 9 3471 00-0000",
+    number: "5493471631562",
+    displayNumber: "+54 9 3471 63-1562",
     defaultMessage: "¡Hola Optinet! Quería hacer una consulta.",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   instagram: {
     handle: "@optinetoptica",
@@ -103,8 +100,6 @@ export const business: BusinessConfig = {
       { days: "Lunes a viernes", hours: "8:30 – 12:30 · 16:30 – 20:30" },
       { days: "Sábados", hours: "9:00 – 12:30" },
     ],
-    note: "Si venís a controlar tu vista, escribinos antes y te reservamos un horario.",
-    isPlaceholder: true,
   },
   hero: {
     eyebrow: "Óptica en Las Parejas, Santa Fe",

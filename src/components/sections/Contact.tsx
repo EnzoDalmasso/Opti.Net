@@ -89,10 +89,6 @@ export function Contact() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-2 text-xs leading-relaxed text-muted">
-                {hours.note}
-                {hours.isPlaceholder && <PlaceholderBadge />}
-              </p>
             </ContactCard>
           </RevealGroup>
 

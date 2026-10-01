@@ -69,9 +69,8 @@ Para conectar una API o CMS alcanza con cambiar esa función respetando el tipo 
 
 ## Datos DEMO a confirmar con la óptica
 
-- **WhatsApp**: número de ejemplo (`isPlaceholder: true`); el sitio muestra la etiqueta "A confirmar".
-  Cargar el número real en `business.ts` y poner `isPlaceholder: false`.
-- **Horarios**: de referencia, también marcados "A confirmar".
+- **WhatsApp**: +54 9 3471 63-1562 (confirmado).
+- **Horarios**: de referencia, confirmar con la óptica y actualizar en `business.ts`.
 - **Dirección**: Calle 22 Nº 910, Las Parejas (tomada de la bio de Instagram). El mapa ya apunta ahí.
 - **Productos y marcas**: ficticios, sólo para la demo.
 - **Imágenes**: fotos de stock de Unsplash (licencia Unsplash), ilustrativas. Ideal reemplazarlas por fotos
